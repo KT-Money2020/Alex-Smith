@@ -16,6 +16,7 @@ header{
     left: 0;
     right: 0;
     clear: both;
+    /*Makes sure there isn't extra white space or something like that */ 
     overflow: auto;
     margin-top: 1.5em;
 }
@@ -70,6 +71,7 @@ header{
 .content-intro {
     /* Adds some margin the header */
     margin-top: 5em;
+    /*Makes sure there isn't extra white space or something like that */ 
     overflow: auto;
 }
 
@@ -108,11 +110,69 @@ header{
 /****************************About Me********************************/
 
 
+.about-me {
+    padding: 5em 0;
+    /*Makes sure there isn't extra white space or something like that */
+    overflow: auto;
+}
 
+.about-me h4{
+    color: #18ba60;
+}
 
+.content-wrap {
+    /*Takes up 90% of the page */
+    width: 90%;
+    margin: 0 auto;
+}
 
+.col-narrow{
+    float: left;
+    overflow: hidden;
+    margin-top: 2em;
+}
 
+.col-wide {
+       /*Takes up 70% of the area it is in*/
+    width: 70%;
+    /*Floats the image to the right */
+    float: right;
+    /*floats all the text within the box to the left */
+    text-align: left;
+    overflow: hidden;
+    margin-top: 2em;
+}
 
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li{
+    text-decoration: none;
+    /* Again, 'display: inline-block' is what makes it so that the icons or list items stop stacking on each other like a list and look more like a navigation bar */
+    display: inline-block;
+    padding: 5px;
+}
+
+/* adding a rounded circle around the icons */
+.social-icons a {
+    border-radius: 50%; 
+    border: 2px solid #333333;
+    /* needs to have the same height and width before you can start forming it into a perfect circle */
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    color: #444444;
+    transition: all 0.2s ease-in;
+}
+
+.social-icons a:hover {
+    color: #18ba60;
+    border: 1px solid #18ba60;
+}
 
 
 
