@@ -1,0 +1,151 @@
+
+
+* {
+    /* Makes sure that there are no default padding when doing border box */
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+header{
+    /* this is because so that it will ignore all the padding and such so that you can then apply yourself */
+    position: absolute;
+    left: 0;
+    right: 0;
+    clear: both;
+    overflow: auto;
+    margin-top: 1.5em;
+}
+/**************************HEADER**********************************/
+.name {
+    font-size: 4em;
+    color: #18ba60;
+    font-weight: 900;
+    margin: 0;
+}
+
+.navigation ul {
+    /* Gets rid of the bullet points */
+    list-style: none;
+    /* centers the navigation bar */
+    margin: auto;
+    padding: 0;
+}
+
+
+.navigation li{
+    /* an inline element that is also a block =) */
+    /*also makes them no longer stack on top of each other*/
+    display: inline-block;
+    margin: 1em;
+}
+
+/* The items links */
+.navigation a {
+    font-weight: bold;
+    text-transform: uppercase;
+    /* Gets rid of the underline */
+    text-decoration: none;
+    padding: 0.5em;
+    color: #ffffff;
+}
+/****************************INTRO********************************/
+
+.intro {
+    /* This syntax has to be exact in order for it to work */
+    /* The linear gradient is making the background darken up for the white font to pop out more, the shade is going from left to right */
+    /* Try experimenting with the degrees in order to visually understand how it works */
+    background: linear-gradient(90deg, rgba(0,0,0,0.5), rgba(0,0,0,0.8)),url('../main-bg.jpg') no-repeat
+    center center/cover;
+    /* Applies padding to top and bottom in order for the images to completely show */
+    /* It is also a way for you to resize the image. Think of responsiveness with this also */
+    padding: 12em 0;
+    color: #ffffff;
+   
+}
+
+.content-intro {
+    /* Adds some margin the header */
+    margin-top: 5em;
+    overflow: auto;
+}
+
+.content-intro h1{
+    margin-top: 1.5em;
+    font-size: 2.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.content-intro span{
+    font-size: 0.5em;
+    font-weight: 400;
+    display: block;
+    margin-top: 10px;
+}
+
+.button-intro {
+    padding: 0.5em 2em;
+    margin-top: 1em;
+    background: #18ba60;
+    color: #ffffff;
+    font-weight: 400;
+    border: 2px solid #18ba60;
+    text-transform: uppercase;
+    /* Button animation*/
+    transition: all 0.2s linear;
+}
+    /* Button Animation */
+.button-intro:hover{
+    background: #ffffff;
+    color: #000000;
+    border: 2px solid #18ba60;
+}
+
+/****************************About Me********************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
