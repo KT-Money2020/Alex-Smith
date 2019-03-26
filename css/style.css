@@ -3,11 +3,13 @@
 * {
     /* Makes sure that there are no default padding when doing border box */
     box-sizing: border-box;
+   
 }
 
 body{
     font-family: 'Raleway', sans-serif;
     text-align: center;
+    margin: 0;
 }
 
 header{
@@ -19,6 +21,11 @@ header{
     /*Makes sure there isn't extra white space or something like that */ 
     overflow: auto;
     margin-top: 1.5em;
+}
+
+hr{
+    border: 2px solid #ffffff;
+    width: 100px;
 }
 /**************************HEADER**********************************/
 .name {
@@ -130,6 +137,14 @@ header{
     float: left;
     overflow: hidden;
     margin-top: 2em;
+    /* its important to clear float after you finish using them */
+    clear: both;
+    /*makes it so that the left align to the left */
+    text-align: left;
+}
+
+.col-narrow h2,h3, p{
+    margin: 5px 0;
 }
 
 .col-wide {
@@ -174,12 +189,29 @@ header{
     border: 1px solid #18ba60;
 }
 
+/****************************Portfolio********************************/
 
 
+.work {
+    padding: 5em 0;
+    background: linear-gradient(90deg, rgba(0,0,0,0.1), rgb(50,206,96)),  url('../code.jpg') no-repeat center center/cover;
+    color: #fff;
+    overflow: auto;
+}
 
+/***************************Contact Me********************************/
 
+.contact-me {
+    padding:5em 0;
+    overflow: auto;
+}
 
-
+.footer{
+    background: #000000;
+    padding: 5em 0;
+    color: #ffffff;
+    overflow: auto;
+}
 
 
 
